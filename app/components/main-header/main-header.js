@@ -2,10 +2,12 @@ import logoImg from "@/assets/logo.png";
 import Link from "next/link";
 import classes from "./main-header.module.css";
 import Image from "next/image";
+import MainHeaderBackground from "./main-header-background";
 
 export default function MainHeader() {
   return (
     <>
+      <MainHeaderBackground />
       <header className={classes.header}>
         <Link href="/" className={classes.logo}>
           {/* Image element has lazy loading and provide optimized images like its converted to webp in chrome, width and height are set */}
